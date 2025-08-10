@@ -21,7 +21,7 @@ app.add_middleware(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://cc-recommender-flax.vercel.app/"#,
+        "https://cc-recommender-flax.vercel.app"#,
         #"https://app.the-styx.net"  # if you add a custom domain
     ],
     allow_credentials=True,
