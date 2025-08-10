@@ -247,7 +247,7 @@ export default function App() {
     <div className="container">
       <h1>Credit Card Advisor</h1>
 
-      <div className="non-sticky-scroll-wrapper">
+      <div className="nonsticky-scroll-wrapper">
         <h2>Cards You Own</h2>
         <CardScrollRow
           cards={ownedCards
