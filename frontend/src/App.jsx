@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 
+const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
+
 // Tabs with only questions (no spending inputs)
 const categoryTabs = [
   {
@@ -228,13 +230,13 @@ export default function App() {
   const [ownedCards, setOwnedCards] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/cards")
+    fetch("${API}/cards")
       .then(res => res.json())
       .then(setCards);
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8000/score", {
+    fetch("${API}/score", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ answers, owned_cards: ownedCards }),
@@ -242,7 +244,7 @@ export default function App() {
       .then(res => res.json())
       .then(setScoredCards);
   }, [answers, ownedCards]); 
-
+  
   return (
     <div className="container">
       <h1>Credit Card Advisor</h1>
