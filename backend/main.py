@@ -8,9 +8,22 @@ import copy
 app = FastAPI()
 
 # Allow all origins for development (tighten this in production)
+"""
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+"""
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://<your-vercel-app>.vercel.app"#,
+        #"https://app.the-styx.net"  # if you add a custom domain
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
