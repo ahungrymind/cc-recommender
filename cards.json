@@ -1,0 +1,327 @@
+[
+  {
+    "name": "Chase Sapphire Reserve",
+    "bonus": {
+      "Rent": 0.0,
+      "Dining": 3.0,
+      "Travel": 4.0
+    },
+    "annual_fee": 795,
+    "default_bonus": 1.0,
+    "image_path": "/images/csr.png",
+    "coupons": {
+      "Travel": 300.0,
+      "FineDining": 300.0,
+      "FancyHotels": 500.0,
+      "AppleTV": 250.0,
+      "DoorDash+": 120.0,
+      "DoorDashPromo2": 300.0,
+      "Lyft": 120.0,
+      "StubHub": 300.0,
+      "Peloton": 120.0
+    },
+    "bonus_caps": {}
+  },
+  {
+    "name": "Chase Sapphire Preferred",
+    "bonus": {
+      "Rent": 0.0,
+      "OnlineGroceries": 3.1,
+      "Dining": 3.1,
+      "DrugStore": 3.0,
+      "StreamingServices": 3.1,
+      "Travel": 2.1
+    },
+    "annual_fee": 95,
+    "default_bonus": 1.1,
+    "image_path": "/images/csp.png",
+    "coupons": {
+      "Hotel": 50.0,
+      "DoorDash+": 120.0,
+      "DoorDashPromo1": 120.0
+    },
+    "bonus_caps": {}
+  },
+  {
+    "name": "Chase Freedom Unlimited",
+    "bonus": {
+      "Rent": 0.0,
+      "Dining": 3.0,
+      "DrugStore": 3.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.5,
+    "image_path": "/images/cfu.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Chase Freedom Flex",
+    "bonus": {
+      "Rent": 0.0,
+      "Groceries": 2.0,
+      "OnlineGroceries": 2.0,
+      "Gas": 2.0,
+      "Dining": 4.0,
+      "DrugStore": 3.0,
+      "StreamingServices": 2.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.0,
+    "image_path": "/images/cff.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Bilt Mastercard",
+    "bonus": {
+      "Rent": 1.0,
+      "Dining": 3.0,
+      "Travel": 2.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.0,
+    "image_path": "/images/bilt.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Wells Fargo Active Cash",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 2.0,
+    "image_path": "/images/wfac.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Amex Platinum",
+    "bonus": {
+      "Rent": 0.0,
+      "Travel": 5.0
+    },
+    "annual_fee": 695,
+    "default_bonus": 1.0,
+    "image_path": "/images/amexplat.png",
+    "coupons": {
+      "Hotel": 200.0,
+      "StreamingServices": 240.0,
+      "UberPromo2": 200.0,
+      "Walmart+": 155.0,
+      "Saks": 100.0,
+      "AirlineIncidentals": 200.0
+    },
+    "bonus_caps": {}
+  },
+  {
+    "name": "Amex Gold",
+    "bonus": {
+      "Rent": 0.0,
+      "Groceries": 4.0,
+      "Dining": 4.0,
+      "Travel": 3.0
+    },
+    "annual_fee": 325,
+    "default_bonus": 1.0,
+    "image_path": "/images/amexgold.png",
+    "coupons": {
+      "UberPromo1": 120.0,
+      "Dunkin": 84.0
+    },
+    "bonus_caps": {}
+  },
+  {
+    "name": "Amex Green",
+    "bonus": {
+      "Rent": 0.0,
+      "Transit": 3.0,
+      "Dining": 3.0,
+      "Travel": 3.0
+    },
+    "annual_fee": 150,
+    "default_bonus": 1.0,
+    "image_path": "/images/amexgreen.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Amex Blue Business Plus",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 2.0,
+    "image_path": "/images/amexbbp.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Amex Blue Business Cash",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 2.0,
+    "image_path": "/images/amexbbc.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Amex Blue Cash Everyday",
+    "bonus": {
+      "Rent": 0.0,
+      "Groceries": 3.0,
+      "Gas": 3.0,
+      "OnlineRetail": 3.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.0,
+    "image_path": "/images/amexbce.png",
+    "coupons": {
+      "DisneyBundle": 84.0
+    },
+    "bonus_caps": {
+      "Groceries": 6000.0,
+      "Gas": 6000.0,
+      "OnlineRetail": 6000.0
+    }
+  },
+  {
+    "name": "Amex Blue Cash Preferred",
+    "bonus": {
+      "Rent": 0.0,
+      "Groceries": 6.0,
+      "Gas": 6.0,
+      "Transit": 6.0,
+      "StreamingServices": 6.0
+    },
+    "annual_fee": 95,
+    "default_bonus": 1.0,
+    "image_path": "/images/amexbcp.png",
+    "coupons": {
+      "DisneyBundle": 84.0
+    },
+    "bonus_caps": {
+      "Groceries": 6000.0,
+      "Gas": 6000.0,
+      "Transit": 6000.0
+    }
+  },
+  {
+    "name": "Citi Custom Cash",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.0,
+    "image_path": "/images/citicustomcash.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Citi Costco Anywhere",
+    "bonus": {
+      "Rent": 0.0,
+      "Gas": 5.0,
+      "Dining": 3.0,
+      "Travel": 3.0,
+      "Costco": 2.0
+    },
+    "annual_fee": 60,
+    "default_bonus": 1.0,
+    "image_path": "/images/citicostco.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "VentureX",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 395,
+    "default_bonus": 2.0,
+    "image_path": "/images/c1vx.png",
+    "coupons": {
+      "Travel": 300.0
+    },
+    "bonus_caps": {}
+  },
+  {
+    "name": "Savor Rewards",
+    "bonus": {
+      "Rent": 0.0,
+      "Groceries": 3.0,
+      "OnlineGroceries": 3.0,
+      "Dining": 3.0,
+      "Entertainment": 3.0,
+      "StreamingServices": 3.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.0,
+    "image_path": "/images/c1savor.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Savor Student",
+    "bonus": {
+      "Rent": 0.0,
+      "Groceries": 3.0,
+      "OnlineGroceries": 3.0,
+      "Dining": 3.0,
+      "Entertainment": 3.0,
+      "StreamingServices": 3.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.0,
+    "image_path": "/images/c1savor.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Discover It Secured",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.0,
+    "image_path": "/images/discoversecured.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Discover It Cash Back",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.0,
+    "image_path": "/images/discoverit.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Chase Freedom Rise",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.5,
+    "image_path": "/images/cfr.png",
+    "coupons": {},
+    "bonus_caps": {}
+  },
+  {
+    "name": "Quicksilver Rewards",
+    "bonus": {
+      "Rent": 0.0
+    },
+    "annual_fee": 0,
+    "default_bonus": 1.5,
+    "image_path": "/images/c1quicksilver.png",
+    "coupons": {},
+    "bonus_caps": {}
+  }
+]
