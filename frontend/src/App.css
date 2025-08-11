@@ -21,31 +21,31 @@
 }
 */
 
-/* Wrappers only handle their own content */
 .nonsticky-scroll-wrapper,
 .sticky-scroll-wrapper {
-  background: white;
-  padding: 0.5rem;
   max-width: 100%;
-  overflow-x: hidden; /* keep extra width from leaking to body */
+  overflow-x: hidden; /* prevent whole page horizontal scroll */
 }
 
-/* Card row is the only scrollable thing */
 .scroll-row {
   display: flex;
-  flex-wrap: nowrap; /* cards stay in one line */
+  flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   gap: 1rem;
   max-width: 100%;
+}
+
+.card-box {
+  flex: 0 0 auto; /* fixed size cards */
+  width: 250px;
   box-sizing: border-box;
 }
 
-/* Keep cards from forcing the container to grow */
-.card-box {
-  flex: 0 0 auto; /* don’t let flex shrink or stretch */
-  width: 250px;   /* fixed card width so total row is predictable */
-  box-sizing: border-box;
+.card-content {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start; /* align image and text at top */
 }
 
 /* Horizontal scrollbar styling */
