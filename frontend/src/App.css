@@ -1,70 +1,59 @@
-/* General Layout */
 .container {
   padding: 2rem;
-  font-family: 'Inter', 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   padding-bottom: 8rem;
-  color: #222;
-  background-color: #f9f9f9;
 }
 
-/* Scrollable Row
 .scroll-row {
   display: flex;
   overflow-x: auto;
   gap: 1rem;
   margin-bottom: 1rem;
 }
-*/
-
-/* Sections */
-.sticky-scroll-wrapper,
-.nonsticky-scroll-wrapper {
+/*
+.sticky-scroll-wrapper {
+  position: sticky;
+  top: 0;
   background: white;
   z-index: 100;
-  padding: 1rem 0;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 1.5rem;
+  padding: 0rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+*/
+
+.sticky-scroll-wrapper {
+  /*position: sticky;
+  top: 0; */
+  background: white; /* or use #fafafa if that matches your body */
+  z-index: 100;
+  padding: 0.5rem;
+  box-shadow: none;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+.nonsticky-scroll-wrapper {
+  background: white; /* or use #fafafa if that matches your body */
+  z-index: 100;
+  padding: 0.5rem;
+  box-shadow: none;
 }
 
-h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-/* Card Styling */
 .card-box {
-  min-width: 340px;
-  max-width: 380px;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  background: white;
-  padding: 1rem;
+  min-width: 360px;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+  padding: 0.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card-box:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  gap: 0.5rem;
 }
 
 .card-name {
-  font-weight: 600;
-  font-size: 1.15rem;
+  font-weight: bold;
+  font-size: 1.1rem;
   text-align: left;
-  margin-bottom: 0.5rem;
-  color: #222;
+  margin-bottom: 0.25rem;
 }
 
 .card-content {
@@ -88,21 +77,8 @@ h2 {
   justify-content: center;
 }
 
-.card-info p {
-  margin: 0.2rem 0;
-  line-height: 1.4;
-}
-
-/* Question Section */
 .question-section {
   margin-top: 2rem;
-}
-
-.sticky-tab-wrapper {
-  background: white;
-  z-index: 99;
-  padding: 0.5rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .question-tabs {
@@ -113,32 +89,30 @@ h2 {
 }
 
 .question-tab {
-  padding: 8px 14px;
-  background: #f5f5f5;
+  padding: 6px 12px;
+  background: #eee;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
-  transition: all 0.2s ease;
-  border: 1px solid transparent;
+  font-size: 0.9rem;
   white-space: nowrap;
+  transition: background 0.2s ease;
 }
 
 .question-tab:hover {
-  background: #eaeaea;
+  background: #ddd;
 }
 
 .question-tab.active {
-  background: #0066cc;
+  background: #333;
   color: white;
-  border-color: #0066cc;
 }
 
-/* Question Boxes */
 .category-box {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background: white;
+  background: #fdfdfd;
 }
 
 .question-box {
@@ -146,41 +120,41 @@ h2 {
 }
 
 .single-question {
-  background: #fafafa;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.single-question p {
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .answer-options {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
-.answer-options input[type="number"],
 .answer-options input[type="text"] {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 140px;
+  padding: 4px;
+  width: 200px;
 }
 
-.answer-options label {
-  font-size: 0.9rem;
+.sticky-tab-wrapper {
+  /* position: sticky;
+  top: 200px; /* or whatever space your scroll-row takes up */
+  background: white;
+  z-index: 99;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* Buttons */
+.question-tabs-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .submit-button {
   padding: 8px 14px;
   font-size: 0.9rem;
-  background: #0066cc;
+  background: #333;
   color: white;
   border: none;
   border-radius: 6px;
@@ -189,5 +163,5 @@ h2 {
 }
 
 .submit-button:hover {
-  background: #004999;
+  background: #111;
 }
